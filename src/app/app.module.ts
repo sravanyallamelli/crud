@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from './layout/layout.module';
+
 
 @NgModule({
   declarations: [
@@ -10,8 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    LayoutModule
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })
